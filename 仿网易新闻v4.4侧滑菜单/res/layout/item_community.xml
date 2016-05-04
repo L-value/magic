@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <TextView 
+         android:id="@+id/name"
+        android:textColor="#ff56A7ce"
+       	android:textSize="17dp"
+       	android:text="有奖活动"
+       	android:layout_marginLeft="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView 
+        android:id="@+id/comimage"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/findll"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"/>
+     <TextView 
+         android:layout_marginTop="5dp"
+         android:id="@+id/content"
+        android:textColor="@color/black"
+       	android:textSize="14dp"
+       	android:text="Uber喊你来找U啦，30元车券免费领"
+       	android:layout_marginLeft="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

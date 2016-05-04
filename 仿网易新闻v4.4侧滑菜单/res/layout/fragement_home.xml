@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="文艺派" />
+
+    <com.picture.myviews.HorizontialListView
+        android:id="@+id/hor01"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" >
+    </com.picture.myviews.HorizontialListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_gary" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="主题推荐" />
+
+    <com.picture.myviews.HorizontialListView
+        android:id="@+id/hor02"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" >
+    </com.picture.myviews.HorizontialListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_gary" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="精品 -今天" />
+
+        <LinearLayout
+            android:id="@+id/spinner_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:showDividers="none" >
+
+            <TextView
+                android:id="@+id/spinner_title_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分类"
+                android:textColor="#ff5881ca"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/spinner_title_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/arrow_up_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_gary" >
+
+        <lib.MultiColumnListView
+            xmlns:pla="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            pla:plaColumnNumber="2"
+            pla:plaLandscapeColumnNumber="3" />
+        
+    </LinearLayout>
+
+</LinearLayout>

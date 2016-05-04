@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/action_personal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/clouds_left"
+            android:text="选择图片"
+            android:textColor="@color/sky_background" />
+
+        <Button
+            android:id="@+id/make"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/clouds_center"
+            android:text="制作效果"
+            android:textColor="@color/sky_background" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/clouds_right"
+            android:text="添加水印"
+            android:textColor="@color/sky_background" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/watertext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sienna"
+        android:text="确认添加"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <Gallery
+            android:id="@+id/galleryFilter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:spacing="2px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/runtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="图片渲染中......"
+        android:textColor="#666666"
+        android:textSize="14dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/sky_background"
+            android:text="确认上传"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/say"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="说点什么"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
